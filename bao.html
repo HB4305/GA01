@@ -10,16 +10,15 @@
     
     <style>
         body {
-            background-image: url('img/logo.png');
-            background-repeat: no-repeat;
-            background-position: right 20px top 20px;
-            background-attachment: fixed;
-            background-size: 200px;
-
+            background-image: url('img/logo.png'), url('img/bg.png');
+            background-repeat: no-repeat, no-repeat;
+            background-position: right 20px top 20px, center center;
+            background-attachment: fixed, fixed;
+            background-size: 200px, cover;
             margin: 0;
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             color: #333;
-            display: flex;
+            display: flex; 
             min-height: 100vh;
         }
 
@@ -134,7 +133,24 @@
         }
 
         .main-content h2 {
-            color:#1e3a8a
+            color:#1e3a8a;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 10px;
+        }
+        .main-content p {
+            font-size: 20px;
+        }
+        .main-content ul {
+            font-size: 20px;
+        }
+
+        .content-card {
+            background-color: rgba(255, 255, 255, 0.95); 
+            border-radius: 12px;
+            padding: 30px 40px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            max-width: calc(100% - 240px); 
+            margin-top: 50px;
         }
     </style>
 </head>
@@ -142,7 +158,7 @@
 
     <aside class="sidebar">
         
-        <!-- hinh nền -->
+        <!-- hình nền -->
         <div class="user-profile">
             <img src="img/hb.png" onerror="this.onerror=null;this.src='https://placehold.co/112x112/E2E8F0/1E3A8A?text=Ava';" alt="Ảnh đại diện" class="avatar">
             <h1>Lê Mai Hoài Bảo</h1>
@@ -173,28 +189,35 @@
 
     <!-- Nội dung-->
     <main class="main-content">
-        <section>
-            <h1>Xin chào, tôi là Hoài Bảo!</h1>
-            <p style="font-size: 20px;">Chào mừng bạn đến với trang web của tôi! Tôi tên là Lê Mai Hoài Bảo, hiện đang là sinh viên Lớp 23KTPM1, chuyên ngành Kỹ thuật phần mềm. <br> 
-                Đối với tôi, công nghệ không chỉ là một ngành học, mà còn là niềm đam mê. "Code" vừa là sở thích, vừa là công cụ để tôi biến những ý tưởng sáng tạo thành hiện thực.</p>
-        </section>
+        <div class = "content-card">
+            <section>
+                <h1>Xin chào, tôi là Hoài Bảo!</h1>
+                <p>Chào mừng bạn đến với trang web của tôi! </p>
+                    <ul>
+                        <li>Tên đầy đủ: Lê Mai Hoài Bảo</li>
+                        <li>MSSV: 23127326</li>
+                        <li>Lớp: 23KTPM1</li>
+                        <li>Chuyên ngành: Kỹ thuật phần mềm</li>
+                    </ul>
+            </section>
 
-        <section>
-            <h2>Định hướng</h2>
-            <p style="font-size: 20px;">Đang theo học Kỹ thuật phần mềm, tôi sớm nhận ra mình đặc biệt có hứng thú với mảng Frontend.  Mục tiêu trước mắt của tôi là trở thành một Lập trình viên Frontend thật cứng tay.
-            Để làm được điều đó, tôi biết chỉ học kiến thức ở trường là chưa đủ. Vì vậy, tôi đang chủ động tự học thêm các kỹ năng thiết yếu như HTML, CSS, JavaScript và bắt đầu làm quen với một số framework phổ biến.
-            <br><br>
-            Tuy nhiên, tôi không định chỉ dừng lại ở việc đi làm lập trình viên. Tôi có một định hướng xa hơn là tiếp tục con đường học thuật. Mục tiêu của tôi là học lên Thạc sĩ và sau này trở thành giảng viên. Tôi thực sự thích ý tưởng được chia sẻ lại những gì mình biết, truyền lửa cho các bạn sinh viên thế hệ sau và góp phần đào tạo thêm nhiều kỹ sư phần mềm giỏi.</p>
-        </section>
+            <section>
+                <h2>Định hướng</h2>
+                <p>Hiện tại tôi theo học Kỹ thuật phần mềm, tôi sớm nhận ra mình đặc biệt có hứng thú với mảng Frontend.  Mục tiêu trước mắt của tôi là trở thành một Lập trình viên Frontend thật cứng tay.
+                Để làm được điều đó, tôi biết chỉ học kiến thức ở trường là chưa đủ. Vì vậy, tôi đang chủ động tự học thêm các kỹ năng thiết yếu như HTML, CSS, JavaScript và bắt đầu làm quen với một số framework phổ biến.
+                <br><br>
+                Tuy nhiên, tôi không định chỉ dừng lại ở việc đi làm lập trình viên. Tôi có một định hướng xa hơn là tiếp tục con đường học thuật. Mục tiêu của tôi là học lên Thạc sĩ và sau này trở thành giảng viên. Tôi thực sự thích ý tưởng được chia sẻ lại những gì mình biết, truyền lửa cho các bạn sinh viên thế hệ sau và góp phần đào tạo thêm nhiều kỹ sư phần mềm giỏi.</p>
+            </section>
 
-        <section>
-            <h2>Sở thích</h2>
-            <p style="font-size: 20px">Tất nhiên, bên cạnh thời gian dành cho việc học tập và nghiên cứu lập trình, tôi luôn chú trọng việc cân bằng cuộc sống. Tôi tìm thấy sự thư giãn và rèn luyện thể chất qua các môn thể thao, đặc biệt là cầu lông và bóng chuyền. Những hoạt động này giúp tôi duy trì sức khỏe, sự tập trung và tinh thần đồng đội. Ngoài ra, những lúc rảnh rỗi, tôi cũng giải trí bằng cách chơi game, đó là cách hiệu quả để tái tạo năng lượng sau những giờ học tập.</p>
-        </section>
+            <section>
+                <h2>Sở thích</h2>
+                <p>Tất nhiên, bên cạnh thời gian dành cho việc học tập và nghiên cứu lập trình, tôi luôn chú trọng việc cân bằng cuộc sống. Tôi tìm thấy sự thư giãn và rèn luyện thể chất qua các môn thể thao, đặc biệt là cầu lông và bóng chuyền. Những hoạt động này giúp tôi duy trì sức khỏe, sự tập trung và tinh thần đồng đội. Ngoài ra, những lúc rảnh rỗi, tôi cũng giải trí bằng cách chơi game, đó là cách hiệu quả để tái tạo năng lượng sau những giờ học tập.</p>
+            </section>
 
-        <footer>
-            GA01
-        </footer>
+            <footer>
+                GA01
+            </footer>
+        </div>
     </main>
 
     
