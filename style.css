@@ -14,9 +14,9 @@ body {
 /* --- Sidebar và nội dung chính --- */
 .sidebar {
     /* fixed width and prevent flex growth so sidebar stays identical across pages */
-    width: 240px;
-    flex: 0 0 240px;
-    max-width: 240px;
+    width: 300px;
+    flex: 0 0 300px;
+    max-width: 300px;
     background-color: #1e3a8a;
     color: #ffffff;
     display: flex;
@@ -26,6 +26,7 @@ body {
     box-sizing: border-box; 
     position: sticky; 
     top: 0;
+    text-align: center;
 }
 
 .main-content {
