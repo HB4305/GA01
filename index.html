@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Meet our passionate team of software engineers, AI specialists, cloud architects, and UI/UX designers building innovative solutions.">
+    <meta name="keywords" content="software engineering, team, AI, cloud computing, UI/UX design, web development">
+    <meta name="author" content="Tech Innovators Team">
+    
+    <!-- SEO Meta Tags -->
+    <meta property="og:title" content="Tech Innovators - Our Team">
+    <meta property="og:description" content="Meet our passionate team of engineers building innovative software solutions.">
+    <meta property="og:type" content="website">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+    <title>Tech Innovators - Meet Our Team</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header role="banner">
+        <nav role="navigation" aria-label="Main navigation">
+            <div class="logo">
+                <span>⚡</span> Tech Innovators
+            </div>
+            
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+                <li><a href="#team">Members</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li>
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                        <span id="themeIcon">🌙</span>
+                        <span id="themeText">Dark</span>
+                    </button>
+                </li>
+            </ul>
+            
+            <div class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" role="region" aria-label="Hero section">
+        <div class="hero-content">
+            <h1>Welcome to Tech Innovators</h1>
+            <p>We are a passionate group of engineers building innovative software solutions that shape the future of technology.</p>
+            <p class="hero-subtitle">Innovation • Collaboration • Excellence</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main role="main">
+        <!-- Team Section -->
+        <section id="team" aria-labelledby="team-heading">
+            <h2 class="section-title" id="team-heading">Meet Our Team</h2>
+            
+            <div class="team-grid">
+                <!-- Member 1: Alice Nguyen -->
+                <article class="member-card" data-animation="fade">
+                    <div class="member-image" aria-hidden="true">
+                        AN
+                    </div>
+                    <h3 class="member-name">Alice Nguyen</h3>
+                    <p class="member-role">Software Engineer</p>
+                    <p class="member-description">
+                        Passionate about full-stack web development and clean architecture. Building scalable solutions with modern technologies.
+                    </p>
+                    <a href="members/member1.html" class="view-profile-btn" aria-label="View Alice Nguyen's profile">
+                        View Profile
+                    </a>
+                </article>
+
+                <!-- Member 2: Bao Tran -->
+                <article class="member-card" data-animation="fade">
+                    <div class="member-image" aria-hidden="true">
+                        BT
+                    </div>
+                    <h3 class="member-name">Bao Tran</h3>
+                    <p class="member-role">AI Engineer</p>
+                    <p class="member-description">
+                        Specializes in machine learning models and computer vision applications. Transforming data into intelligent solutions.
+                    </p>
+                    <a href="members/member2.html" class="view-profile-btn" aria-label="View Bao Tran's profile">
+                        View Profile
+                    </a>
+                </article>
+
+                <!-- Member 3: Minh Le -->
+                <article class="member-card" data-animation="fade">
+                    <div class="member-image" aria-hidden="true">
+                        ML
+                    </div>
+                    <h3 class="member-name">Minh Le</h3>
+                    <p class="member-role">Cloud Engineer</p>
+                    <p class="member-description">
+                        Experienced in AWS and scalable backend architectures. Crafting robust cloud infrastructure for modern applications.
+                    </p>
+                    <a href="members/member3.html" class="view-profile-btn" aria-label="View Minh Le's profile">
+                        View Profile
+                    </a>
+                </article>
+
+                <!-- Member 4: Linh Pham -->
+                <article class="member-card" data-animation="fade">
+                    <div class="member-image" aria-hidden="true">
+                        LP
+                    </div>
+                    <h3 class="member-name">Linh Pham</h3>
+                    <p class="member-role">UI/UX Designer</p>
+                    <p class="member-description">
+                        Focused on creating intuitive and visually appealing user interfaces. Designing experiences that users love.
+                    </p>
+                    <a href="members/member4.html" class="view-profile-btn" aria-label="View Linh Pham's profile">
+                        View Profile
+                    </a>
+                </article>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" aria-labelledby="contact-heading">
+            <h2 class="section-title" id="contact-heading">Get In Touch</h2>
+            
+            <div style="max-width: 600px; margin: 0 auto; background-color: var(--card-background); padding: 2rem; border-radius: 15px; box-shadow: 0 5px 20px var(--shadow-light);">
+                <form class="contact-form" aria-label="Contact form">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required aria-required="true">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" placeholder="your.email@example.com" required aria-required="true">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell us about your project or inquiry..." required aria-required="true"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer role="contentinfo">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>Tech Innovators is a team of passionate engineers dedicated to building cutting-edge software solutions that make a difference.</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <p><a href="index.html">Home</a></p>
+                <p><a href="#team">Our Team</a></p>
+                <p><a href="#contact">Contact</a></p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <ul class="social-links">
+                    <li><a href="#" aria-label="GitHub"><i class='bx bxl-github'></i></a></li>
+                    <li><a href="#" aria-label="Email"><i class='bx bxs-envelope'></i></a></li>
+                    <li><a href="#" aria-label="Instagram"><i class='bx bxl-instagram'></i></a></li>
+                    <li><a href="#" aria-label="LinkedIn"><i class='bx bxl-linkedin-square'></i></a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 Tech Innovators. All rights reserved. | Built with ❤️ by our team</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
