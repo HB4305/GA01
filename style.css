@@ -1,0 +1,240 @@
+body {
+    background-image: url('img/logo.png'), url('img/bg.png');
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 20px top 20px, center center;
+    background-attachment: fixed, fixed;
+    background-size: 200px, cover;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #333;
+    display: flex; 
+    min-height: 100vh;
+}
+
+/* --- Sidebar và nội dung chính --- */
+.sidebar {
+    /* fixed width and prevent flex growth so sidebar stays identical across pages */
+    width: 300px;
+    flex: 0 0 300px;
+    max-width: 300px;
+    background-color: #1e3a8a;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    height: 100vh;
+    box-sizing: border-box; 
+    position: sticky; 
+    top: 0;
+    text-align: center;
+}
+
+.main-content {
+    flex-grow: 1;
+    /* allow main content to shrink when needed (prevents forcing sidebar to resize) */
+    min-width: 0;
+    padding: 40px;
+}
+
+/* --- Hồ sơ người dùng --- */
+.user-profile {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.user-profile .avatar {
+    width: 112px;
+    height: 112px;
+    border-radius: 50%;
+    display: block;          
+    margin: 0 auto 16px;
+    border: 4px solid rgba(255, 255, 255, 0.5);
+    object-fit: cover;
+    background-color: white;
+    line-height: 0;          
+}
+
+.user-profile h1 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.user-profile p {
+    font-size: 0.875rem;
+    color: #d1d5db; 
+    margin: 4px 0 0;
+}
+
+/* --- Điều hướng Sidebar --- */
+ .sidebar-nav ul {
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-nav a {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: large; 
+    text-decoration: none;
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.sidebar-nav a i {
+    width: 24px;
+    margin-right: 12px;
+    text-align: center;
+}
+
+.sidebar-nav a:hover {
+    background-color: #1e40af;
+    transform: translateX(5px);
+}
+.sidebar-footer {
+    margin-top: auto; 
+    text-align: center;
+    color: #9ca3af; 
+    font-size: 15px;
+}
+
+.sidebar-footer a {
+    color: #ffffff; 
+    text-decoration: none;
+    margin: 0 5px;
+}
+/* --- Liên kết mạng xã hội --- */
+.social-links-container {
+    margin-top: auto;
+}
+
+.social-links-container p {
+    text-align: center;
+    font-size: 0.75rem;
+    color: #9ca3af;
+    margin-bottom: 16px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+}
+
+.social-links a {
+    margin: 0 8px;
+    color: #d1d5db;
+    transition: color 0.2s ease-in-out;
+}
+
+.social-links a:hover {
+    color: #ffffff;
+}
+
+/* --- Nội dung chính --- */
+.main-content footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 10px 15px;
+}
+
+.main-content h1 {
+    color:#1e3a8a
+}
+
+.main-content h2 {
+    color:#1e3a8a;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 10px;
+}
+
+.main-content p,
+.main-content ul {
+    font-size: 20px;
+}
+
+/* --- Khung nội dung chính --- */
+.content-card {
+    background-color: rgba(255, 255, 255, 0.95); 
+    border-radius: 12px;
+    padding: 30px 40px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    max-width: calc(100% - 240px); 
+    margin-top: 60px;
+}
+/*--- Members page --- */
+
+.member-list-vertical {
+    display: grid;
+    /* Tự động tạo cột, mỗi cột rộng tối thiểu 200px */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 25px; /* Khoảng cách giữa các thẻ */
+    margin-top: 25px;
+}
+
+.member-card-vertical {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px; /* Bo góc giống content-card */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Bóng đổ giống content-card */
+    overflow: hidden; /* Giúp bo góc cho ảnh bên trong */
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.member-card-vertical:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.member-photo {
+    width: 100%;
+    height: 220px; /* Đặt chiều cao cố định cho ảnh */
+    object-fit: cover; /* Đảm bảo ảnh lấp đầy, không bị méo */
+    display: block;
+}
+
+.member-info {
+    padding: 20px 15px; /* Khoảng đệm cho tên bên dưới */
+}
+
+.member-link {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #1e3a8a; /* Màu xanh chủ đạo */
+    text-decoration: none;
+}
+
+.member-link:hover {
+    text-decoration: underline; /* Gạch chân khi hover vào link */
+}
+
+/* Responsive adjustments: collapse sidebar on small screens */
+@media (max-width: 800px) {
+    /* stack sidebar above content on narrow screens */
+    body {
+        display: block;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding: 16px;
+        flex: 0 0 auto;
+        max-width: none;
+    }
+
+    .main-content {
+        padding: 16px;
+    }
+
+    .content-card {
+        max-width: 100%;
+        margin-top: 20px;
+        padding: 20px;
+    }
+}

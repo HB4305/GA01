@@ -1,48 +1,89 @@
 <!DOCTYPE html>
-<html>
-    <body>
-        <header>
-            <h1>Web Application Development</h1>
-        </header>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thành viên - Nhóm PTUDW</title>
 
-        <nav>
-            <ul>
-                <li> <a href="index.html"> Home </a></li>
-                <li> <a href="members.html"> Member </a></li>
-                <li> <a href="contact.html"> Contact </a></li>
-            </ul>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <aside class="sidebar">
+        
+        <div class="user-profile">
+            <img src="img/profile.png" onerror="this.onerror=null;this.src='https://placehold.co/112x112/E2E8F0/1E3A8A?text=Nhóm';" alt="Ảnh nhóm" class="avatar">
+            <h1>Nhóm học tập</h1>
+            <p>PTUDW</p>
+        </div>
+        
+        <nav class="sidebar-nav">
+            <a href="index.html">
+                <i class="fas fa-home"></i> Trang chủ
+            </a>
+            <a href="members.html" class="active">
+                <i class="fas fa-users"></i> Thành viên
+            </a>
         </nav>
-        <main>
-            <section>
-                <h2>
-                    <p> Ảnh đại diện</p>
-                    <img src="img\1.gif" width="180" height="180">
-                </h2>
-            </section>
-            <section>
-                <h2> Thông tin cá nhân </h2>
-                <p> <strong> Họ và tên: </strong> Vu The Anh</p>
-                <p> <strong> MSSV:</strong>: 23127263</p>
-                <p> <strong> Lớp:</strong> 23KTPM1</p>
-                <p> <strong> Chuyên ngành:</strong> Công nghệ tri thức</p>
-            </section>
 
-            <section>
-                <h2> Sở thích </h2>
-                <ul>
-                    <li> Sở thích 1</li>
-                    <li> Sở thích 2</li>
-                </ul>
-            </section>
-
-            <section>
-
-            </section>
-
-        </main>
-
-        <footer>
-            <p> GA01</p>
+        <footer class="social-links-container">
+            <p>Kết nối với nhóm</p>
+            <div class="social-links">
+                <a href="https://www.facebook.com/share/g/19oiQixM4S/" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+            </div>
         </footer>
-    </body>
+    </aside>
+
+   <main class="main-content">
+        <div class="content-card">
+            <h1 style="text-align:center;">Thành viên nhóm PTUDW</h1>
+
+            <div class="member-list-vertical">
+
+                <div class="member-card-vertical">
+                    <img src="img/khanh.png" class="member-photo" onerror="this.onerror=null;this.src='https://placehold.co/200x220/E2E8F0/1E3A8A?text=Ảnh';">
+                    <div class="member-info">
+                        <a href="khanh.html" class="member-link">Lâm Hữu Khánh</a>
+                    </div>
+                </div>
+
+                <div class="member-card-vertical">
+                    <img src="img/hb.png" class="member-photo" onerror="this.onerror=null;this.src='https://placehold.co/200x220/E2E8F0/1E3A8A?text=Ảnh';">
+                    <div class="member-info">
+                        <a href="bao.html" class="member-link">Lê Mai Hoài Bảo</a>
+                    </div>
+                </div>
+                
+                <div class="member-card-vertical">
+                    <img src="img/member5.png" class="member-photo" onerror="this.onerror=null;this.src='https://placehold.co/200x220/E2E8F0/1E3A8A?text=Ảnh';">
+                    <div class="member-info">
+                        <a href="#" class="member-link">Phạm Lê Thái Bảo</a>
+                    </div>
+                </div>
+                <div class="member-card-vertical">
+                    <img src="img/member3.png" class="member-photo" onerror="this.onerror=null;this.src='https://placehold.co/200x220/E2E8F0/1E3A8A?text=Ảnh';">
+                    <div class="member-info">
+                        <a href="#" class="member-link">Vũ Thế Anh</a>
+                    </div>
+                </div>
+
+                <div class="member-card-vertical">
+                    <img src="img/vk.jpg" class="member-photo" onerror="this.onerror=null;this.src='https://placehold.co/200x220/E2E8F0/1E3A8A?text=Ảnh';">
+                    <div class="member-info">
+                        <a href="khai.html" class="member-link">Nguyễn Phạm Văn Khải</a>
+                    </div>
+                </div>
+
+
+            </div>
+            <footer>
+                GA01
+            </footer>
+        </div>
+    </main>
+</body>
 </html>
