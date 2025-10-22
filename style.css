@@ -237,4 +237,10 @@ body {
         margin-top: 20px;
         padding: 20px;
     }
+
+    .main-content footer {
+        position: static;
+        text-align: right;
+        margin-top: 20px;
+    }
 }
